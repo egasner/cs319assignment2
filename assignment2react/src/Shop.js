@@ -65,6 +65,24 @@ const Shop = () => {
         </div>
     ));
 
+    const listItems2 = items.map((el) => (
+        // PRODUCT
+        <div class="row border-top border-bottom" key={el.id}>
+            <div class="row main align-items-center">
+                <div class="col-2">
+                    <img class="img-fluid" src={el.image} />
+                </div>
+                <div class="col">
+                    <div class="row ">{el.title}</div>
+                    <div class="row text-muted">{el.description}</div>
+                    <div class="row">{el.category}</div>
+                </div>
+                <div class="col">
+                Dabloons {el.price} Each <span class="close">&#10005;</span> Buying {howManyofThis(el.id)} 
+                </div>
+            </div>
+        </div>
+    ));
     const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
     const form = document.getElementById('checkout-form');
     const catalogy = document.getElementById('catalogy');
@@ -117,6 +135,8 @@ const Shop = () => {
                 <div class="col-2"></div>
                 <div class="col-8">
                 <div id="liveAlertPlaceholder"></div>
+                <div>Itesm in Cart :</div>
+                <div>{cartItems}</div>
                 <form class="row g-3 " id="checkout-form">
                     <div class="col-md-6">
                         <label for="inputName" class="form-label">Full Name</label>
@@ -182,7 +202,8 @@ const Shop = () => {
 
                     <div class="col-12">
                         <br></br>
-                        <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> Order</button>
+                        <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> Order</button> 
+                        <br></br>
                     </div>
                 </form>
                 </div>
@@ -198,6 +219,7 @@ const Shop = () => {
                         <h5 class="card-title">Order summary</h5>
                         <p class="card-text">Here is a summary of your order.</p>
                         </div>
+                        <div>{listItems2}</div>
                         <ul class="list-group list-group-flush">
                         </ul>
                         <a href="" onclick="location.reload()" class="btn btn-secondary"> <i class="bi-arrow-left-circle"></i>
