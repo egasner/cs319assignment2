@@ -203,6 +203,8 @@ const Shop = () => {
                     <div class="col-12">
                         <br></br>
                         <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> Order</button> 
+                        <p> </p>
+                        <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> F*** GO back</button> 
                         <br></br>
                     </div>
                 </form>
