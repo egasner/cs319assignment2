@@ -50,7 +50,8 @@ const Shop = () => {
                     <img class="img-fluid" src={el.image} />
                 </div>
                 <div class="col">
-                    <div class="row text-muted">{el.title}</div>
+                    <div class="row ">{el.title}</div>
+                    <div class="row text-muted">{el.description}</div>
                     <div class="row">{el.category}</div>
                 </div>
                 <div class="col">
@@ -58,7 +59,7 @@ const Shop = () => {
                     <button type="button" variant="light" onClick={() => addToCart(el)}> + </button>
                 </div>
                 <div class="col">
-                ${el.price} <span class="close">&#10005;</span>{howManyofThis(el.id)}
+                Dabloons {el.price} <span class="close">&#10005;</span>{howManyofThis(el.id)}
                 </div>
             </div>
         </div>
@@ -79,7 +80,7 @@ const Shop = () => {
     return (
         <div>
         <div class="">
-            Assignment 02 MEME STORE
+            Assignment 02 MEME STORE Group 30 Ethan Gasner and Savannah Franklin
             <div class="card " id="catalogy">
                 <div class="row">
                     

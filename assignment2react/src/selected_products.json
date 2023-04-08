@@ -1,47 +1,57 @@
 [
   {
     "id": 1,
-    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-    "price": 109.95,
-    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-    "category": "men's clothing",
-    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "title": "Mike Wazowski",
+    "price": 4,
+    "description": "Mike Wazowski with two eyes",
+    "category": "Normal Meme",
+    "image": "https://cdn-useast1.kapwing.com/collections/mike_wazowski_with_two_eyes_meme_template_yhohp_thumbnail.jpg?Expires=1681012806&GoogleAccessId=dev-sa-videoprocessing%40kapwing-dev.iam.gserviceaccount.com&Signature=DLsUM4RbdHXY8BE%2BnHYpdkDxeTAFBy0LJdmm9y5KfwXOWi%2F4mMbsy73TX42ysVpVnN7NI9YBmoaAtL9re%2BiZ4Hym51VftgRvuxKwJGP3mxrRM5jxeHr9CTsQmBP3pPV3z0R1ExgpsHnMwDAN4INC06IzHEOQn5HC3oeH84OKU24IrM3wQSFEgQiH%2FXuhS8NLCCeOU%2BXpc24g8Z%2Bm6yOgLA3pscLmjTop5TH2P48jXBVzYI3Nn1c%2BNZqpa2X5MWCTqL5K4fmMrjqwd%2FBsq4NJvCNamJrmoG2zonuXoLZCreF9x3cC0GKwcXdx4A1wObAY7l8%2F9cXtOhwueZQGPyMD1Q%3D%3D",
     "rating": { "rate": 3.9, "count": 120 }
   },
   {
     "id": 5,
-    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-    "price": 695,
-    "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-    "category": "jewelery",
-    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "title": "Long nose Dog",
+    "price": 33,
+    "description": "Dog with long nose is both cute and funny",
+    "category": "Animal Meme",
+    "image": "https://pbs.twimg.com/media/FIcddqQVUAEwovO.jpg",
     "rating": { "rate": 4.6, "count": 400 }
   },
   {
     "id": 9,
-    "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-    "price": 64,
-    "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-    "category": "electronics",
-    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "title": "Bingus is Calling",
+    "price": 4.69,
+    "description": "Pick up pick up bingus is calling",
+    "category": "Animal Meme",
+    "image": "https://ih1.redbubble.net/image.2364200062.6454/mwo,x1000,ipad_2_snap-pad,750x1000,f8f8f8.jpg",
     "rating": { "rate": 3.3, "count": 203 }
   },
   {
     "id": 10,
-    "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-    "price": 109,
-    "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-    "category": "electronics",
-    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "title": "Guhhhhhh Cat",
+    "price": 87,
+    "description": "Hes obvisouly fed up like what the heck",
+    "category": "Animal Meme",
+    "image": "https://media.tenor.com/rtKFHEGpoPwAAAAd/meme-lang.gif",
     "rating": { "rate": 2.9, "count": 470 }
   },
   {
     "id": 16,
-    "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-    "price": 29.95,
-    "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+    "title": "Wizard Orb",
+    "price": 1.1,
+    "description": "He pondering his orb.  oooo its the shadow wizard money gang",
+    "category": "Normal Meme",
+    "image": "https://sportshub.cbsistatic.com/i/2021/12/01/66f87ae1-f30e-49b1-9a78-8da8a578b4b9/pondering-my-orb.png",
+    "rating": { "rate": 2.9, "count": 340 }
+  },
+  {
+    "id": 19,
+    "title": "Skyrim Opening Meme",
+    "price": 2,
+    "description": "Hey your finally awake OMG THats so cool Says rolaf",
+    "category": "Gaming Meme",
+    "image": "https://cdn.mos.cms.futurecdn.net/Fg9HQjBE6XoW9uic5StbQ5.jpg",
     "rating": { "rate": 2.9, "count": 340 }
   }
+  
 ]
