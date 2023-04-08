@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import items from "./selected_products.json";
+import "bootstrap/dist/css/bootstrap.css";
 
 
 const Shop = () => {
@@ -53,7 +54,7 @@ const Shop = () => {
                     <div class="row">{el.category}</div>
                 </div>
                 <div class="col">
-                    <button type="button" variant="light" onClick={() => removeFromCart(el)} > - </button>{" "}
+                    <button type="button" variant="light" onClick={() => removeFromCart(el)} > Clear All </button>{" "}
                     <button type="button" variant="light" onClick={() => addToCart(el)}> + </button>
                 </div>
                 <div class="col">
@@ -62,7 +63,14 @@ const Shop = () => {
             </div>
         </div>
     ));
-        
+
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+    const form = document.getElementById('checkout-form');
+    const catalogy = document.getElementById('catalogy');
+    const review = document.getElementById('review');
+    
+    
+    var order = { name: '', email: '', card: '' };
 
     
 
@@ -70,10 +78,11 @@ const Shop = () => {
 
     return (
         <div>
+        <div class="">
             Assignment 02 MEME STORE
-            <div class="card">
+            <div class="card " id="catalogy">
                 <div class="row">
-                    {/* HERE, IT IS THE SHOPING CART */}
+                    
                     <div class="col-md-8 cart">
                     <div class="title">
                     <div class="row">
@@ -94,10 +103,112 @@ const Shop = () => {
                     <span class ="small text-muted me-2">FUNNY total:</span>
                     <span class ="lead fw-normal">${cartTotal}</span>
                     </p>
+                    <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> CHECK OUT</button>
                     </div>
+                    
                 </div>
             </div>
         </div>
+
+
+            <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                <div id="liveAlertPlaceholder"></div>
+                <form class="row g-3 " id="checkout-form">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="inputName"></input>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Must be like, "John Doe"
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4"></input>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Must be like, "abc@xyz.efg"
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <label for="inputCard" class="form-label">Card</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi-credit-card-fill"></i></span>
+                            <input type="text" id="inputCard" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX"
+                            aria-label="Username" aria-describedby="basic-addon1"></input>
+                            <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Must be like, "7777-7777-7777-7777"
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"></input>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"></input>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity"></input>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Iowa</option>
+                        <option>Not Iowa</option>
+                        <option>not Not Iowa but also not iowa</option>
+                        <option>Silly BIlly land</option>
+                    </select>
+                    </div>
+                        <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip"></input>
+                    </div>
+
+                    <div class="col-12">
+                        <br></br>
+                        <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> Order</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+
+            <div class="container" id="review">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="card" >
+                        <div class="card-body">
+                        <h5 class="card-title">Order summary</h5>
+                        <p class="card-text">Here is a summary of your order.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        </ul>
+                        <a href="" onclick="location.reload()" class="btn btn-secondary"> <i class="bi-arrow-left-circle"></i>
+                        Return</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            </div>  
+                    
         );
 }
 
