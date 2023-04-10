@@ -10,6 +10,7 @@ const Shop = () => {
     const [checkout, setCheckout] = useState(false);
     const [confirmation, setConfirmation] = useState(false);
     const [query, setQuery] = useState('');
+    const [ProductsCategory, setProductsCategory] = useState(items);
 
     useEffect(() => {
         total();
@@ -49,11 +50,11 @@ const Shop = () => {
     const handleChange = (e) => {
         setQuery(e.target.value);
         console.log("Step 6 : in handleChange, Target Value :",e.target.value," Query Value :",query);
-        const results = catalog.filter(eachProduct => {
-            if (e.target.value === "") return catalog;
+        const results = ProductsCategory.filter(eachProduct => {
+            if (e.target.value === "") return ProductsCategory;
             return eachProduct.title.toLowerCase().includes(e.target.value.toLowerCase())
         });
-        setCatalog(results);
+        setProductsCategory(results);
     }
 
     const listItems = items.map((el) => (
