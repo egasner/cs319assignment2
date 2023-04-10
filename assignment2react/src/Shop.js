@@ -6,6 +6,9 @@ import "bootstrap/dist/css/bootstrap.css";
 const Shop = () => {
     const [cart, setCart] = useState([]);
     const [cartTotal, setCartTotal] = useState(0);
+    const [catalog, setCatalog] = useState(true);
+    const [checkout, setCheckout] = useState(false);
+    const [confirmation, setConfirmation] = useState(false);
 
     useEffect(() => {
         total();
@@ -83,6 +86,24 @@ const Shop = () => {
             </div>
         </div>
     ));
+
+    function showCatalog(){
+        setCatalog(true);
+        setCheckout(false);
+        setConfirmation(false);
+    }
+    function showCheckout(){
+        setCatalog(false);
+        setCheckout(true);
+        setConfirmation(false);
+    }
+    function showConfirmation(){
+        setCatalog(false);
+        setCheckout(false);
+        setConfirmation(true);
+    }
+
+
     const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
     const form = document.getElementById('checkout-form');
     const catalogy = document.getElementById('catalogy');
@@ -91,13 +112,15 @@ const Shop = () => {
     
     var order = { name: '', email: '', card: '' };
 
+
+
     
 
     
 
     return (
         <div>
-       {true && <div class="">
+       {catalog && <div class="">
             Assignment 02 MEME STORE Group 30 Ethan Gasner and Savannah Franklin
             <div class="card " id="catalogy">
                 <div class="row">
@@ -122,7 +145,7 @@ const Shop = () => {
                     <span class ="small text-muted me-2">FUNNY total:</span>
                     <span class ="lead fw-normal">${cartTotal}</span>
                     </p>
-                    <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> CHECK OUT</button>
+                    <button type="submit" class="btn btn-success" onClick={showCheckout}> <i class="bi-bag-check"></i> CHECK OUT</button>
                     </div>
                     
                 </div>
@@ -133,7 +156,7 @@ const Shop = () => {
             <div class="container">
             <div class="row">
                 <div class="col-2"></div>
-    { true && <div class="col-8">
+    { checkout && <div class="col-8">
                 <div id="liveAlertPlaceholder"></div>
                 <div>Itesm in Cart :</div>
                 <div>{cartItems}</div>
@@ -202,9 +225,9 @@ const Shop = () => {
 
                     <div class="col-12">
                         <br></br>
-                        <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> Order</button> 
+                        <button type="submit" class="btn btn-success" onClick={showConfirmation}> <i class="bi-bag-check"></i> Order</button> 
                         <p> </p>
-                        <button type="submit" class="btn btn-success" > <i class="bi-bag-check"></i> F*** GO back</button> 
+                        <button type="submit" class="btn btn-success" onClick={showCatalog}> <i class="bi-bag-check"></i> F*** GO back</button> 
                         <br></br>
                     </div>
                 </form>
@@ -212,7 +235,7 @@ const Shop = () => {
             </div>
             </div>
 
-            {true && <div class="container" id="review">
+            {confirmation && <div class="container" id="review">
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
