@@ -9,6 +9,7 @@ const Shop = () => {
     const [catalog, setCatalog] = useState(true);
     const [checkout, setCheckout] = useState(false);
     const [confirmation, setConfirmation] = useState(false);
+    const [query, setQuery] = useState('');
 
     useEffect(() => {
         total();
@@ -45,8 +46,23 @@ const Shop = () => {
         return hmot.length;
     }
 
+    const handleChange = (e) => {
+        setQuery(e.target.value);
+        console.log("Step 6 : in handleChange, Target Value :",e.target.value," Query Value :",query);
+        const results = ProductsCategory.filter(eachProduct => {
+            if (e.target.value === "") return ProductsCategory;
+            return eachProduct.title.toLowerCase().includes(e.target.value.toLowerCase())
+        });
+        setProductsCategory(results);
+    }
+
     const listItems = items.map((el) => (
         // PRODUCT
+        <>
+        <div className="py-10">
+            <input type="search" value={query} onChange={handleChange}/>
+        </div>
+
         <div class="row border-top border-bottom" key={el.id}>
             <div class="row main align-items-center">
                 <div class="col-2">
@@ -66,6 +82,7 @@ const Shop = () => {
                 </div>
             </div>
         </div>
+        </>
     ));
 
     const listItems2 = items.map((el) => (
