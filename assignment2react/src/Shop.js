@@ -97,7 +97,7 @@ const Shop = () => {
 
     return (
         <div>
-        <div class="">
+       {true && <div class="">
             Assignment 02 MEME STORE Group 30 Ethan Gasner and Savannah Franklin
             <div class="card " id="catalogy">
                 <div class="row">
@@ -127,13 +127,13 @@ const Shop = () => {
                     
                 </div>
             </div>
-        </div>
+        </div>}
 
 
             <div class="container">
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-8">
+    { true && <div class="col-8">
                 <div id="liveAlertPlaceholder"></div>
                 <div>Itesm in Cart :</div>
                 <div>{cartItems}</div>
@@ -208,11 +208,11 @@ const Shop = () => {
                         <br></br>
                     </div>
                 </form>
-                </div>
+                </div>}
             </div>
             </div>
 
-            <div class="container" id="review">
+            {true && <div class="container" id="review">
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
@@ -229,7 +229,7 @@ const Shop = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>}
             
             
             </div>  
